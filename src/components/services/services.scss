@@ -1,0 +1,70 @@
+.skills {
+    padding: 3rem 5%; /* Balanced padding */
+    background: linear-gradient(180deg, #0c0c1d, #111132); /* Dark gradient */
+    color: #fff; 
+    text-align: center;
+  
+    &-header {
+      margin-bottom: 3rem; /* Increased spacing for better visual separation */
+      background-color: rgba(255, 255, 255, 0.1); /* More subtle background */
+      padding: 2.5rem;
+      border-radius: 12px; /* Slightly rounder corners */
+  
+      h2 {
+        font-size: 3rem; /* Larger heading */
+        color: #e4e4f9;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+  
+      p {
+        font-size: 1.25rem;
+        color: #dcdcf5;
+        max-width: 700px; /* Wider paragraph */
+        margin: 0 auto;
+      }
+    }
+  
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+  
+      .skill-item {
+        background-color: rgba(255, 255, 255, 0.08); /* Darker background */
+        border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease; /* Smoother transition on all properties */
+  
+        &:hover {
+          transform: translateY(-5px) scale(1.02); /* Slight scale on hover */
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+  
+        img {
+          width: 80px;
+          height: auto;
+          margin: 0 auto 1.5rem;
+          filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2)); /* Subtle drop shadow */
+          display: flex;
+          flex-direction: row;
+        }
+  
+        h3 {
+          font-size: 1.7rem;
+          color: #e4e4f9;
+          font-weight: 500;
+          margin-bottom: 0.75rem;
+        }
+  
+        p {
+          font-size: 1.15rem;
+          color: #dcdcf5;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+  

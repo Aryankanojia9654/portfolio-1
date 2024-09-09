@@ -1,0 +1,73 @@
+.hero {
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;  // Base layer
+
+
+}
+
+.wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;  // Ensures wrapper and its contents are above the hero background but below interactive elements
+}
+
+h2 {
+    color: rebeccapurple;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+h1 {
+    font-size: 88px;
+}
+
+.buttons {
+    button {
+        padding: 20px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: 300;
+        margin: 10px;
+    }
+}
+
+.textContainer {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    z-index: 3;  // Ensures text and buttons are clickable and above other content
+}
+
+.mouse {
+    width: 40px;
+}
+
+.imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;  // Should be higher than hero base but lower than text for interaction
+}
+
+.slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -110px;
+    white-space: nowrap;
+    color: #ffffff09;
+    font-weight: bold;
+    z-index: 0;  // Lowest layer, below image and other content
+}
